@@ -1,4 +1,4 @@
-# Italian Translations for Admin-on-rest
+# Italian Translations for React-admin
 
 Italian translations for [react-admin](https://github.com/marmelab/react-admin), the frontend framework for building admin applications on top of REST services.
 
