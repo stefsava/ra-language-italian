@@ -103,6 +103,7 @@ module.exports = {
             number: 'Deve essere un numero',
             email: 'Deve essere un valido indirizzo email',
             oneOf: 'Deve essere uno di: %{options}',
-            regex: 'Deve rispettare il formato (espressione regolare): %{pattern}',        },
+            regex: 'Deve rispettare il formato (espressione regolare): %{pattern}',        
+        },
     },
 };
