@@ -28,7 +28,6 @@ module.exports = {
             show: '%{name} %{id}',
             create: 'Aggiungi %{name}',
             delete: 'Elimina %{name} %{id}',
-            dashboard: 'Cruscotto',
             not_found: 'Non trovato',
         },
         input: {
@@ -83,7 +82,7 @@ module.exports = {
             password: 'Password',
             sign_in: 'Login',
             sign_in_error: 'Autenticazione fallita, riprovare.',
-            logout: 'Disconnessione',
+            logout: 'Logout',
         },
         notification: {
             updated: 'Record aggiornato |||| %{smart_count} records aggiornati',
