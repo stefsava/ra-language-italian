@@ -1,84 +1,87 @@
 module.exports = {
   ra: {
     action: {
-      delete: 'Cancella',
-      show: 'Mostra',
-      list: 'Elenco',
-      save: 'Salva',
-      create: 'Crea',
-      edit: 'Modifica',
-      sort: 'Ordina',
-      cancel: 'Annulla',
-      undo: 'Annulla',
-      refresh: 'Aggiorna',
-      add: 'Aggiungi',
-      remove: 'Remove',
       add_filter: 'Aggiungi un filtro',
-      remove_filter: 'Rimuovi questo filtro',
+      add: 'Aggiungi',
       back: 'Indietro',
-      bulk_actions: '%{smart_count} selezionati'
+      bulk_actions: '%{smart_count} selezionati',
+      cancel: 'Annulla',
+      clear_input_value: 'Svuota il modulo',
+      clone: 'Duplica',
+      confirm: 'Conferma',
+      create: 'Crea',
+      'delete': 'Cancella',
+      edit: 'Modifica',
+      'export': 'Esporta',
+      list: 'Elenco',
+      refresh: 'Aggiorna',
+      remove_filter: 'Rimuovi questo filtro',
+      remove: 'Remove',
+      save: 'Salva',
+      search: 'Ricerca',
+      show: 'Mostra',
+      sort: 'Ordina',
+      undo: 'Annulla',
+      expand: 'Espandi',
+      close: 'Chiudi'
     },
-    boolean: {
+    'boolean': {
       true: 'Si',
       false: 'No'
     },
     page: {
-      list: 'Lista %{name}',
-      edit: '%{name} %{id}',
-      show: '%{name} %{id}',
       create: 'Aggiungi %{name}',
-      delete: 'Elimina %{name} %{id}',
       dashboard: 'Cruscotto',
-      not_found: 'Non trovato'
+      edit: '%{name} %{id}',
+      error: 'Qualcosa non ha funzionato',
+      list: 'Lista %{name}',
+      loading: 'Caricamento in corso',
+      not_found: 'Non trovato',
+      show: '%{name} %{id}'
     },
     input: {
       file: {
-        upload_several:
-                    'Trascina i files da caricare, oppure clicca per selezionare.',
+        upload_several: 'Trascina i files da caricare, oppure clicca per selezionare.',
         upload_single: 'Trascina il file da caricare, oppure clicca per selezionarlo.'
       },
       image: {
-        upload_several:
-                    'Trascina le immagini da caricare, oppure clicca per selezionarle.',
-        upload_single:
-                    'Trascina l\'immagine da caricare, oppure clicca per selezionarla.'
+        upload_several: 'Trascina le immagini da caricare, oppure clicca per selezionarle.',
+        upload_single: 'Trascina l\'immagine da caricare, oppure clicca per selezionarla.'
       },
       references: {
         all_missing: 'Impossibile trovare i riferimenti associati.',
-        many_missing:
-                    'Almeno uno dei riferimenti associati non sembra più disponibile.',
-        single_missing:
-                    'Il riferimento associato non sembra più disponibile.'
+        many_missing: 'Almeno uno dei riferimenti associati non sembra più disponibile.',
+        single_missing: 'Il riferimento associato non sembra più disponibile.'
       }
     },
     message: {
-      yes: 'Si',
-      no: 'No',
-      are_you_sure: 'Sei sicuro ?',
       about: 'Informazioni',
-      not_found:
-                'Hai inserito un URL errato, oppure hai cliccato un link errato',
-      loading: 'La pagina si sta caricando, solo un momento per favore',
-      invalid_form: 'Il modulo non è valido. Si prega di verificare la presenza di errori.',
-      delete_title: 'Cancella %{name} #%{id}',
+      are_you_sure: 'Sei sicuro ?',
+      bulk_delete_content: 'Sei sicuro di voler cancellare questo %{name}? |||| Sei sicuro di voler eliminare questi %{smart_count}?',
+      bulk_delete_title: 'Delete %{name} |||| Delete %{smart_count} %{name} items',
       delete_content: 'Are you sure you want to delete this item?',
-      bulk_delete_title:
-                'Delete %{name} |||| Delete %{smart_count} %{name} items',
-      bulk_delete_content:
-                'Sei sicuro di voler cancellare questo %{name}? |||| Sei sicuro di voler eliminare questi %{smart_count}?'
+      delete_title: 'Cancella %{name} #%{id}',
+      details: 'Dettagli',
+      error: 'Un errore locale è occorso e la tua richiesta non è stata completata.',
+      invalid_form: 'Il modulo non è valido. Si prega di verificare la presenza di errori.',
+      loading: 'La pagina si sta caricando, solo un momento per favore',
+      no: 'No',
+      not_found: 'Hai inserito un URL errato, oppure hai cliccato un link errato',
+      yes: 'Si'
     },
     navigation: {
       no_results: 'Nessun risultato trovato',
-      no_more_results:
-                'La pagina numero %{page} è fuori dell\'intervallo. Prova la pagina precedente.',
+      no_more_results: 'La pagina numero %{page} è fuori dell\'intervallo. Prova la pagina precedente.',
       page_out_of_boundaries: 'Il numero di pagina %{page} è fuori dei limiti',
       page_out_from_end: 'Fine della paginazione',
       page_out_from_begin: 'Il numero di pagina deve essere maggiore di 1',
       page_range_info: '%{offsetBegin}-%{offsetEnd} di %{total}',
+      page_rows_per_page: 'Righe per pagina',
       next: 'Successivo',
       prev: 'Precedente'
     },
     auth: {
+      user_menu: 'Profile',
       username: 'Nome utente',
       password: 'Password',
       sign_in: 'Login',
@@ -92,7 +95,9 @@ module.exports = {
       bad_item: 'Record errato',
       item_doesnt_exist: 'Record inesistente',
       http_error: 'Errore di comunicazione con il server dati',
-      canceled: 'Azione annullata'
+      data_provider_error: 'Errore del data provider. Controlla la console per i dettagli.',
+      canceled: 'Azione annullata',
+      logged_out: 'La sessione è scaduta. Effettua nuovamente l\'accesso.'
     },
     validation: {
       required: 'Campo obbligatorio',
