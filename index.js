@@ -38,7 +38,7 @@ module.exports = {
       loading: 'Caricamento in corso',
       not_found: 'Non trovato',
       show: '%{name} %{id}',
-      empty: 'Ancora nessun %{name}.',
+      empty: 'Nessun elemento.',
       invite: 'Vuoi aggiungerne uno?'
     },
     input: {
