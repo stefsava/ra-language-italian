@@ -37,7 +37,9 @@ module.exports = {
       list: 'Lista %{name}',
       loading: 'Caricamento in corso',
       not_found: 'Non trovato',
-      show: '%{name} %{id}'
+      show: '%{name} %{id}',
+      empty: 'Ancora nessun %{name}.',
+      invite: 'Vuoi aggiungerne uno?'
     },
     input: {
       file: {
