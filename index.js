@@ -56,7 +56,11 @@ module.exports = {
         all_missing: 'Impossibile trovare i riferimenti associati.',
         many_missing: 'Almeno uno dei riferimenti associati non sembra più disponibile.',
         single_missing: 'Il riferimento associato non sembra più disponibile.'
-      }
+      },
+      password: {
+        toggle_visible: 'Nascondere la password',
+        toggle_hidden: 'Mostrare la password',
+      },
     },
     message: {
       about: 'Informazioni',
