@@ -75,7 +75,8 @@ module.exports = {
       loading: 'La pagina si sta caricando, solo un momento per favore',
       no: 'No',
       not_found: 'Hai inserito un URL errato, oppure hai cliccato un link errato',
-      yes: 'Si'
+      yes: 'Si',
+      unsaved_changes: "Alcune modifiche non sono state registrate. È sicuro/a di voler abbandonare questa pagina ?"
     },
     navigation: {
       no_results: 'Nessun risultato trovato',
