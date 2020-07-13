@@ -4,7 +4,7 @@ module.exports = {
       add_filter: 'Aggiungi un filtro',
       add: 'Aggiungi',
       back: 'Indietro',
-      bulk_actions: '%{smart_count} selezionati',
+      bulk_actions: '%{smart_count} selezionato |||| %{smart_count} selezionati',
       cancel: 'Annulla',
       clear_input_value: 'Pulisci campo',
       clone: 'Duplica',
@@ -16,14 +16,16 @@ module.exports = {
       list: 'Elenco',
       refresh: 'Aggiorna',
       remove_filter: 'Rimuovi questo filtro',
-      remove: 'Rimuovi',
+      remove: 'Eliminare',
       save: 'Salva',
       search: 'Ricerca',
       show: 'Mostra',
       sort: 'Ordina',
       undo: 'Annulla',
       expand: 'Espandi',
-      close: 'Chiudi'
+      close: 'Chiudi',
+      open_menu: 'Aprire il menu',
+      close_menu: 'Chiudere il menu',
     },
     'boolean': {
       true: 'Si',
@@ -38,8 +40,8 @@ module.exports = {
       loading: 'Caricamento in corso',
       not_found: 'Non trovato',
       show: '%{name} %{id}',
-      empty: 'Nessun elemento.',
-      invite: 'Vuoi aggiungerne uno?'
+      empty: 'Non ancora in %{name}.',
+      invite: 'Desidera crearne uno ?'
     },
     input: {
       file: {
