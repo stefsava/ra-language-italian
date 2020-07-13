@@ -90,12 +90,13 @@ module.exports = {
       prev: 'Precedente'
     },
     auth: {
+      auth_check_error: 'Grazie di connettersi per continuare',
       user_menu: 'Profilo',
       username: 'Nome utente',
       password: 'Password',
-      sign_in: 'Login',
+      sign_in: 'Connessione',
       sign_in_error: 'Autenticazione fallita, riprovare.',
-      logout: 'Esci'
+      logout: 'Esci',
     },
     notification: {
       updated: 'Record aggiornato |||| %{smart_count} records aggiornati',
