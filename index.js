@@ -106,6 +106,7 @@ module.exports = {
       item_doesnt_exist: 'Record inesistente',
       http_error: 'Errore di comunicazione con il server dati',
       data_provider_error: 'Errore del data provider. Controlla la console per i dettagli.',
+      i18n_error: 'Errore di caricamento delle traduzioni per la lingua selezionata',
       canceled: 'Azione annullata',
       logged_out: 'La sessione è scaduta. Effettua nuovamente l\'accesso.'
     },
