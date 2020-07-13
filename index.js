@@ -29,7 +29,8 @@ module.exports = {
     },
     'boolean': {
       true: 'Si',
-      false: 'No'
+      false: 'No',
+      null: '',
     },
     page: {
       create: 'Aggiungi %{name}',
