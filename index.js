@@ -4,7 +4,7 @@ module.exports = {
       add_filter: 'Aggiungi un filtro',
       add: 'Aggiungi',
       back: 'Indietro',
-      bulk_actions: '%{smart_count} selezionati',
+      bulk_actions: '%{smart_count} selezionato |||| %{smart_count} selezionati',
       cancel: 'Annulla',
       clear_input_value: 'Pulisci campo',
       clone: 'Duplica',
@@ -16,18 +16,22 @@ module.exports = {
       list: 'Elenco',
       refresh: 'Aggiorna',
       remove_filter: 'Rimuovi questo filtro',
-      remove: 'Rimuovi',
+      remove: 'Eliminare',
       save: 'Salva',
       search: 'Ricerca',
       show: 'Mostra',
       sort: 'Ordina',
       undo: 'Annulla',
+      unselect: 'Deselezionare',
       expand: 'Espandi',
-      close: 'Chiudi'
+      close: 'Chiudi',
+      open_menu: 'Aprire il menu',
+      close_menu: 'Chiudere il menu',
     },
     'boolean': {
       true: 'Si',
-      false: 'No'
+      false: 'No',
+      null: '',
     },
     page: {
       create: 'Aggiungi %{name}',
@@ -38,8 +42,8 @@ module.exports = {
       loading: 'Caricamento in corso',
       not_found: 'Non trovato',
       show: '%{name} %{id}',
-      empty: 'Nessun elemento.',
-      invite: 'Vuoi aggiungerne uno?'
+      empty: 'Non ancora in %{name}.',
+      invite: 'Desidera crearne uno ?'
     },
     input: {
       file: {
@@ -54,7 +58,11 @@ module.exports = {
         all_missing: 'Impossibile trovare i riferimenti associati.',
         many_missing: 'Almeno uno dei riferimenti associati non sembra più disponibile.',
         single_missing: 'Il riferimento associato non sembra più disponibile.'
-      }
+      },
+      password: {
+        toggle_visible: 'Nascondere la password',
+        toggle_hidden: 'Mostrare la password',
+      },
     },
     message: {
       about: 'Informazioni',
@@ -69,7 +77,8 @@ module.exports = {
       loading: 'La pagina si sta caricando, solo un momento per favore',
       no: 'No',
       not_found: 'Hai inserito un URL errato, oppure hai cliccato un link errato',
-      yes: 'Si'
+      yes: 'Si',
+      unsaved_changes: "Alcune modifiche non sono state registrate. È sicuro/a di voler abbandonare questa pagina ?"
     },
     navigation: {
       no_results: 'Nessun risultato trovato',
@@ -83,12 +92,13 @@ module.exports = {
       prev: 'Precedente'
     },
     auth: {
+      auth_check_error: 'Grazie di connettersi per continuare',
       user_menu: 'Profilo',
       username: 'Nome utente',
       password: 'Password',
-      sign_in: 'Login',
+      sign_in: 'Connessione',
       sign_in_error: 'Autenticazione fallita, riprovare.',
-      logout: 'Esci'
+      logout: 'Esci',
     },
     notification: {
       updated: 'Record aggiornato |||| %{smart_count} records aggiornati',
@@ -98,6 +108,7 @@ module.exports = {
       item_doesnt_exist: 'Record inesistente',
       http_error: 'Errore di comunicazione con il server dati',
       data_provider_error: 'Errore del data provider. Controlla la console per i dettagli.',
+      i18n_error: 'Errore di caricamento delle traduzioni per la lingua selezionata',
       canceled: 'Azione annullata',
       logged_out: 'La sessione è scaduta. Effettua nuovamente l\'accesso.'
     },
