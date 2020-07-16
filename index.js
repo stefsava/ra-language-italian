@@ -22,6 +22,7 @@ module.exports = {
       show: 'Mostra',
       sort: 'Ordina',
       undo: 'Annulla',
+      unselect: 'Deselezionare',
       expand: 'Espandi',
       close: 'Chiudi',
       open_menu: 'Aprire il menu',
