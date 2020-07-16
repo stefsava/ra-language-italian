@@ -4,40 +4,46 @@ module.exports = {
       add_filter: 'Aggiungi un filtro',
       add: 'Aggiungi',
       back: 'Indietro',
-      bulk_actions: '%{smart_count} selezionati',
+      bulk_actions: '%{smart_count} selezionato |||| %{smart_count} selezionati',
       cancel: 'Annulla',
-      clear_input_value: 'Svuota il modulo',
+      clear_input_value: 'Pulisci campo',
       clone: 'Duplica',
       confirm: 'Conferma',
       create: 'Crea',
-      'delete': 'Cancella',
+      'delete': 'Elimina',
       edit: 'Modifica',
       'export': 'Esporta',
       list: 'Elenco',
       refresh: 'Aggiorna',
       remove_filter: 'Rimuovi questo filtro',
-      remove: 'Remove',
+      remove: 'Eliminare',
       save: 'Salva',
       search: 'Ricerca',
       show: 'Mostra',
       sort: 'Ordina',
       undo: 'Annulla',
+      unselect: 'Deselezionare',
       expand: 'Espandi',
-      close: 'Chiudi'
+      close: 'Chiudi',
+      open_menu: 'Aprire il menu',
+      close_menu: 'Chiudere il menu',
     },
     'boolean': {
       true: 'Si',
-      false: 'No'
+      false: 'No',
+      null: '',
     },
     page: {
       create: 'Aggiungi %{name}',
-      dashboard: 'Cruscotto',
+      dashboard: 'Dashboard',
       edit: '%{name} %{id}',
-      error: 'Qualcosa non ha funzionato',
+      error: 'Qualcosa è andato storto',
       list: 'Lista %{name}',
       loading: 'Caricamento in corso',
       not_found: 'Non trovato',
-      show: '%{name} %{id}'
+      show: '%{name} %{id}',
+      empty: 'Non ancora in %{name}.',
+      invite: 'Desidera crearne uno ?'
     },
     input: {
       file: {
@@ -52,22 +58,27 @@ module.exports = {
         all_missing: 'Impossibile trovare i riferimenti associati.',
         many_missing: 'Almeno uno dei riferimenti associati non sembra più disponibile.',
         single_missing: 'Il riferimento associato non sembra più disponibile.'
-      }
+      },
+      password: {
+        toggle_visible: 'Nascondere la password',
+        toggle_hidden: 'Mostrare la password',
+      },
     },
     message: {
       about: 'Informazioni',
-      are_you_sure: 'Sei sicuro ?',
+      are_you_sure: 'Sei sicuro?',
       bulk_delete_content: 'Sei sicuro di voler cancellare questo %{name}? |||| Sei sicuro di voler eliminare questi %{smart_count}?',
-      bulk_delete_title: 'Delete %{name} |||| Delete %{smart_count} %{name} items',
-      delete_content: 'Are you sure you want to delete this item?',
+      bulk_delete_title: 'Elimina %{name} |||| Elimina %{smart_count} %{name} elementi',
+      delete_content: 'Sei sicuro di voler eliminare questi elementi?',
       delete_title: 'Cancella %{name} #%{id}',
       details: 'Dettagli',
-      error: 'Un errore locale è occorso e la tua richiesta non è stata completata.',
+      error: 'Si è verificato une errore e la tua richiesta non è stata completata.',
       invalid_form: 'Il modulo non è valido. Si prega di verificare la presenza di errori.',
       loading: 'La pagina si sta caricando, solo un momento per favore',
       no: 'No',
       not_found: 'Hai inserito un URL errato, oppure hai cliccato un link errato',
-      yes: 'Si'
+      yes: 'Si',
+      unsaved_changes: "Alcune modifiche non sono state registrate. È sicuro/a di voler abbandonare questa pagina ?"
     },
     navigation: {
       no_results: 'Nessun risultato trovato',
@@ -81,12 +92,13 @@ module.exports = {
       prev: 'Precedente'
     },
     auth: {
-      user_menu: 'Profile',
+      auth_check_error: 'Grazie di connettersi per continuare',
+      user_menu: 'Profilo',
       username: 'Nome utente',
       password: 'Password',
-      sign_in: 'Login',
+      sign_in: 'Connessione',
       sign_in_error: 'Autenticazione fallita, riprovare.',
-      logout: 'Disconnessione'
+      logout: 'Esci',
     },
     notification: {
       updated: 'Record aggiornato |||| %{smart_count} records aggiornati',
@@ -96,13 +108,14 @@ module.exports = {
       item_doesnt_exist: 'Record inesistente',
       http_error: 'Errore di comunicazione con il server dati',
       data_provider_error: 'Errore del data provider. Controlla la console per i dettagli.',
+      i18n_error: 'Errore di caricamento delle traduzioni per la lingua selezionata',
       canceled: 'Azione annullata',
       logged_out: 'La sessione è scaduta. Effettua nuovamente l\'accesso.'
     },
     validation: {
       required: 'Campo obbligatorio',
-      minLength: 'Deve essere lungo %{min} caratteri almeno',
-      maxLength: 'Deve essere lungo %{max} caratteri al massimo',
+      minLength: 'Deve essere lungo almeno %{min} caratteri',
+      maxLength: 'Deve essere lungo al massimo %{max} caratteri',
       minValue: 'Deve essere almeno %{min}',
       maxValue: 'Deve essere al massimo %{max}',
       number: 'Deve essere un numero',
