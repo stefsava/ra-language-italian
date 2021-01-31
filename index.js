@@ -31,7 +31,7 @@ const italianMessages = {
         boolean: {
             true: 'Si',
             false: 'No',
-            null: '',
+            null: ' ',
         },
         page: {
             create: 'Aggiungi %{name}',
@@ -89,7 +89,8 @@ const italianMessages = {
             page_range_info: '%{offsetBegin}-%{offsetEnd} di %{total}',
             page_rows_per_page: 'Righe per pagina',
             next: 'Successivo',
-            prev: 'Precedente'
+            prev: 'Precedente',
+            skip_nav: 'Salta al contenuto',
         },
         sort: {
             sort_by: 'Ordine per %{field} %{order}',
